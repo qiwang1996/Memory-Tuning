@@ -3,7 +3,7 @@ Code for NeuralPS 2022 submission titled "Memory-Tuning: A Unified Parameter-Eff
 
 
 ## Note  
-Our released code is setted for using BERT-Large. If you want to validate results conducted on  BERT-base,  Please revise code as the following intruction:  
+Our released code is setted for using BERT-Large. If you want to validate results conducted on  BERT-base,  Please revise code as the following instruction:  
 Step1: In ffn_trainabl e_module/bert.py  line 120-121,   set  n_layer=12 n_head=12,  n_embd=768, mid_dim=1024   
 Step2: In main.py line 77, set hidden_size=768  
 
@@ -11,7 +11,7 @@ Step2: In main.py line 77, set hidden_size=768
 ## Main experiment and Robustness Analysis  
 
 script.sh supports 7 tuning methods  for training and  inferring on 8 dataset used in paper.
-There are  line command examples running on 3  datasets  in given script.sh. You can add the remaining
+There are  line command examples running on 3  datasets  in given script.sh. You can add 
 line commands for other datasets according to those given ones and please note different setup for different dataset in Table 1 of our paper.
  
 
