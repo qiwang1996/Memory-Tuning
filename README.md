@@ -5,7 +5,7 @@ Code for NeuralPS 2022 submission titled "Memory-Tuning: A Unified Parameter-Eff
 ## Note  
 Our released code is setted for using BERT-Large. If you want to validate results conducted on  BERT-base,  Please revise code as the following intruction:  
 Step1: In ffn_trainabl e_module/bert.py  line 120-121,   set  n_layer=12 n_head=12,  n_embd=768, mid_dim=1024   
-Step2: In main.py line 77, set hidden_size=1024   
+Step2: In main.py line 77, set hidden_size=768  
 
 
 ## Main experiment and Robustness Analysis  
