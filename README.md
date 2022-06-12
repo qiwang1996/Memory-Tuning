@@ -21,7 +21,7 @@ Our released code is setted for using BERT-Large but our visualization experimen
 places in code for visualization experiment as the Note part illustrated.  
 
 Step1: revise code as  the Note part  illustrated
-Step2: Train  BERT-base  on  SST-2 and MRPC  for  MT-M, MT-F, MT-MF.
+Step2: Train  BERT-base  on  SST-2 and MRPC  for  MT-M, MT-F, MT-MF.  
 Step3:   
 Step4: use  predict.py  for inferring  
 Step5:  set   --test-file './data/SST-2/dev.tsv'    --test-file './data/MRPC/dev.tsv'  in line command for SST-2 and MRPC respectively.  (Since we experiment on  the dev file)  
