@@ -20,7 +20,7 @@ line commands for other datasets according to those given ones and please note d
 Our released code is setted for using BERT-Large but our visualization experiment is conducted  by using BERT-base. So you need to revise several
 places in code for visualization experiment as the Note part illustrated.  
 
-Step1: revise code as  the Note part  illustrated
+Step1: revise code as  the Note part  illustrated   
 Step2: Train  BERT-base  on  SST-2 and MRPC  for  MT-M, MT-F, MT-MF.      
 Step3:   
 Step4: use  predict.py  for inferring  
