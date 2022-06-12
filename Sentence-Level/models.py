@@ -17,6 +17,10 @@ from typing import Union
 import time
 
 
+prefix_attn_file = open('prefix_attn.txt', 'w')
+layer = 12 - 1
+
+
 class BertForSequenceClassification(BertPreTrainedModel):
     def __init__(self, config):
         super().__init__(config)
@@ -168,6 +172,12 @@ class AutoModelForSequenceClassificationFinetuner(pl.LightningModule):
             attention_mask = torch.cat([prefix_mask, attention_mask], dim=1)
             output = self.model(input_ids, attention_mask=attention_mask,
                                 labels=labels, past_key_values=past, return_dict=True)
+            '''
+            attn = output.attentions
+            print(attn[layer][:, :, 0, :self.prefix_len].detach().cpu().numpy().tolist(), 
+                                                        file=prefix_attn_file)
+            '''
+
         return output
 
     def tokenize(self, texts: List[str]):

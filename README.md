@@ -18,11 +18,11 @@ line commands for other datasets according to those given ones and please note d
 ## Visualization for attention vector  of  memory slots  
 
 Our released code is setted for using BERT-Large but our visualization experiment is conducted  by using BERT-base. So you need to revise several
-places in code for visualization experiment as the Note part illustrated.  
+places in code for visualization experiment as the Note part illustrated.   
 
-Step1: revise code as  the Note part  illustrated   
-Step2: Train  BERT-base  on  SST-2 and MRPC  for  MT-M, MT-F, MT-MF.      
-Step3:   
+Step1: revise code as Note part illustrated.   
+Step2: Train  BERT-base  on  SST-2 and MRPC  for  MT-M, MT-F, MT-MF.         
+Step3: use Visualize/MSRA/bert.py to replace Token-Level/ffn_trainable_module/bert.py  for MSRA or  use Visualize/SST-2/bert.py to replace  Sentence-Level/ffn_trainable_module/bert.py for SST-2   
 Step4: use  predict.py  for inferring   
 
 Take visualization of  memory using MT-F for example, MT-M and MT-MF are similar with it in the following steps.   
