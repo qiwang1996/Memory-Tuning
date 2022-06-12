@@ -24,7 +24,9 @@ Step1: revise code as  the Note part  illustrated
 Step2: Train  BERT-base  on  SST-2 and MRPC  for  MT-M, MT-F, MT-MF.      
 Step3:   
 Step4: use  predict.py  for inferring   
-Take visualization of  memory using MT-F for example, MT-M and MT-MF are similar with it.   
+
+Take visualization of  memory using MT-F for example, MT-M and MT-MF are similar with it in the following steps.   
+
 Step5:  set   --test-file './data/SST-2/dev.tsv'    --test-file './data/MRPC/dev.tsv'  in line command for SST-2 and MRPC respectively.  (Since we experiment on  the dev file)  
 Step6: copy the inferred attention data and  pred.txt  into Visualize\MSRA\memory-ffn,  Run compare.txt and then Run t-sne.py  
  
